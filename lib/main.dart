@@ -40,7 +40,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       if(Usuario.docs.length !=0){
         for(var cursor in Usuario.docs) {
           if (cursor.get("email") == email.text) {
-            print("Usuario encontrado");
+            print("Usuario encontrados");
             print(cursor.get("Telefono"));
             if (cursor.get("Contraseña") == password.text) {
               print("Acceso aceptado");
